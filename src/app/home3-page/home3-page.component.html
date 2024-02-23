@@ -1,0 +1,31 @@
+<div class="page">
+  <app-not-found [visible]="!home3" notFoundMessage="Product Not Found" resetLinkText="Back to Home Page"></app-not-found>
+<div  *ngIf="home3" class="container">
+    <img class="img" [src]="home3.imageUrl" [alt]="home3.name">
+    <div class="details">
+      <div class="header">
+        <span class="name">
+          {{home3.name}}
+        </span>
+        <span class="favourite {{home3.favorite?'':'not'}}">
+          ❤
+        </span>
+      </div>
+      <div class="origins">
+        <span *ngFor="let origin of home3.origins">
+          {{origin}}
+        </span>
+      </div>
+      <div class="cook-time">
+        <span>
+          Fullfil your home with modern <strong>look</strong>
+        </span>
+      </div>
+      <div class="stars">
+        <star-rating [stars]="home3.stars"></star-rating>
+      </div>
+      <div class="price"><span>{{home3.price|currency}}</span></div>
+      <button (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+  </div>

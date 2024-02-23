@@ -1,0 +1,92 @@
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 10px;
+  background-color: rgb(203, 181, 159);
+  margin: 0;
+}
+ul li a{
+  height: 29rem;
+  width: 16rem;
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  margin-left: 3rem; 
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #6f0303;
+  opacity: 1;
+} 
+ul li a:hover{
+  cursor: pointer;
+  opacity: 0.85;
+}
+.content
+{
+  padding-bottom: 1.5rem;
+  padding-top: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  position: relative;
+  background-color: rgb(216, 203, 186);
+}
+.favorite
+{
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  font-size: 1.2 rem;
+}
+.favorite.not{
+  color: grey;
+}
+.product-item-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.origins
+{
+  flex: 9 ;
+}
+.origins span{
+  border-radius: 2rem;
+  display: inline-block;
+  font-size: .7rem;
+  color: grey;
+  margin-right: .3rem;
+}
+.price{
+  color: #414141;
+  margin-top: .4rem;
+}
+.pochetna{
+  margin-top: 44px;
+  width: 53%;
+  margin-left: 4%;
+  height: 53vh;
+  opacity: 0.9;
+  border-radius: 140px;
+  border: 1px solid rgb(67, 91, 99);
+}
+.pochetna:hover{
+  opacity: 1;
+}
+.div1{
+  background-color: rgb(94, 118, 127);
+  padding-bottom: 50px;
+  height: 100vh;
+}
+p
+{
+  color: rgb(65, 1, 1);
+  width: 70%;
+  padding-left: 60px;
+  font-size: 22px;
+  font-style: italic;
+}

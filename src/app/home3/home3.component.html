@@ -1,0 +1,29 @@
+<div class="div3"><img class="pochetna3" src="assets/vases/slika.jpg"><p>
+Welcome to our vase gallery, where beauty blooms in every shape and size. Explore our curated collection of exquisite vases, each one a masterpiece in its own right. From sleek and modern designs to timeless classics, our vases are crafted with precision and passion to showcase your floral arrangements with elegance and grace.<br><br>Whether you're adorning your dining table with a stunning centerpiece or adding a pop of color to a bare corner, our vases are the perfect complement to any space. Made from high-quality materials and finished with meticulous attention to detail, our vases are as durable as they are beautiful, ensuring that your blooms will shine for years to come. Elevate your decor and let your creativity flourish with our exceptional selection of vases.</p></div>
+<app-search3></app-search3>
+<app-not-found [visible]="!home3 || home3.length<=0" resetLinkText="Reset Search"></app-not-found>
+<ul>
+  <li *ngFor="let h3 of home3">
+    <a routerLink="/h3/{{h3.id}}">
+      <img src="{{h3.imageUrl}}" alt="">
+      <div class="content">
+        <div class="name">
+          {{h3.name}}
+        </div>
+        <span class="favorite {{h3.favorite?'':'not'}}">
+          ❤
+        </span>
+        <div class="product-item-footer">
+          <div class="origins">
+            <span *ngFor="let origin of h3.origins">
+              {{origin}}
+            </span>
+          </div>
+        </div>
+        <div class="price">
+          <span>{{h3.price|currency}}</span>
+        </div>
+      </div>
+    </a> 
+  </li>
+</ul> 

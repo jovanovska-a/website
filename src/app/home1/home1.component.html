@@ -1,0 +1,32 @@
+<div class="div1"><img class="pochetna" src="assets/slike/pochetna1.jpg">
+  <p>
+  <br>
+Brighten up your home with our stunning selection of lamps. From chic and contemporary designs to timeless classics, our carefully curated collection offers something to suit every taste and style. Whether you're searching for a sleek desk lamp to illuminate your workspace or a statement floor lamp to add ambiance to your living room, we have the perfect lighting solution for you.<br><br> Crafted with high-quality materials and attention to detail, our lamps are as functional as they are stylish, providing both illumination and aesthetic appeal to any room. Explore our range today and let us help you light up your space in style.</p>
+</div>
+<app-search></app-search>
+<app-not-found [visible]="!foods || foods.length<=0" resetLinkText="Reset Search"></app-not-found>
+<ul>
+  <li *ngFor="let food of foods">
+    <a routerLink="/food/{{food.id}}">
+      <img src="{{food.imageUrl}}" alt="">
+      <div class="content">
+        <div class="name">
+          {{food.name}}
+        </div>
+        <span class="favorite {{food.favorite?'':'not'}}">
+          ❤
+        </span>
+        <div class="product-item-footer">
+          <div class="origins">
+            <span *ngFor="let origin of food.origins">
+              {{origin}}
+            </span>
+          </div>
+        </div>
+        <div class="price">
+          <span>{{food.price|currency}}</span>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>

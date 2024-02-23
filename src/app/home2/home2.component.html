@@ -1,0 +1,29 @@
+<div class="div2"><img class="pochetna2" src="assets/candles/pochetna.jpg"><p>
+Welcome to our candle emporium, where enchanting fragrances and captivating ambiance await. Dive into our exquisite selection of candles, meticulously crafted to infuse your home with warmth and serenity. From soothing lavender to invigorating citrus, our range of scents caters to every mood and occasion.<br><br>Whether you're looking to create a cozy atmosphere for a relaxing evening or add a touch of elegance to a special event, our candles are the perfect choice. Hand-poured with the finest ingredients and adorned with charming accents, each candle is a work of art designed to delight the senses. Transform your space into a sanctuary of tranquility with our luxurious candles.</p></div>
+<app-search2></app-search2>
+<app-not-found [visible]="!home2 || home2.length<=0" resetLinkText="Reset Search"></app-not-found>
+<ul>
+  <li *ngFor="let h2 of home2">
+    <a routerLink="/h2/{{h2.id}}">
+      <img src="{{h2.imageUrl}}" alt="">
+      <div class="content">
+        <div class="name">
+          {{h2.name}}
+        </div>
+        <span class="favorite {{h2.favorite?'':'not'}}">
+          ❤
+        </span>
+        <div class="product-item-footer">
+          <div class="origins">
+            <span *ngFor="let origin of h2.origins">
+              {{origin}}
+            </span>
+          </div>
+        </div>
+        <div class="price">
+          <span>{{h2.price|currency}}</span>
+        </div>
+      </div>
+    </a> 
+  </li>
+</ul> 

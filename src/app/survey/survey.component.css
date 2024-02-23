@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+section{
+  padding: 40px 5%;
+  height: 100vh;
+  background-color: rgb(230, 232, 232);
+}
+.contacts
+{
+  background-size: cover;
+}
+.contacts2
+{
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+.contact-us
+{
+  font-size: 2rem;
+  color: rgb(132, 112, 92);
+  margin-top: 40px;
+}
+h3
+{
+  color: rgb(21, 96, 111);
+}
+.contactForm{
+  border: 1px solid black;
+  width: 50%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 3rem;
+}
+.inputBox
+{
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+}
+.contactForm h2{
+  font-size: 30px;
+  color: rgb(219, 191, 165);
+  text-decoration: underline;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  resize: none;
+}
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.2s;
+  color: rgb(83, 83, 83)
+}
+.contactForm .inputBox input:focus ~ span,.contactForm .inputBox textarea:focus ~ span{
+  color: rgb(6, 120, 143);
+  font-size: 12px;
+  transform: translateY(-15px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px; background-color: rgb(21, 96, 111);
+  color: rgb(232, 208, 181);
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  border: 2px black solid;
+}
+.contactForm .inputBox input[type="submit"]:hover{
+  background:  rgb(213, 189, 162);
+  color: rgb(21, 96, 111);
+}
+.card-back{
+  transform: rotateY(180deg);
+  
+}
+.pics-address{
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-info p{
+  margin: 0;
+  font-size: 20px;
+  color: rgb(21, 96, 111);
+}
+.category-info span{
+  margin-right: 15px;
+  font-size: 20px;
+  color: rgb(131, 106, 82);
+}
+.category
+{
+  background-color:  rgb(213, 189, 162);
+}
+.novaKlasa{
+  transform: translateY(-20px);
+}
+.cspan{
+  font-size: 2rem;
+}
+.form2{
+  max-width: 800px;
+  margin: 3px auto;
+  background-color:white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 100vh;
+  background-size: cover;
+  background-position: bottom right;
+}
+label {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: bold;
+  color:rgb(21, 96, 111);
+}
+.form2 input,.form2 select,.form2 textarea {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #b0b0b0; 
+  border-radius: 4px;
+  font-size: 14px;
+  color:rgb(83, 83, 83);
+  background-color: rgb(236, 236, 236);
+}
+input[type="radio"] {
+  margin-bottom: 1px;
+}
+.radio
+{
+  display: flex;
+}
+#purpose-info,#purpose-purchase,
+#purpose-contact,#purpose-other
+{
+  margin-top: 8px;
+  margin-right: 5px;
+  height: 10px;
+  width: 10px;
+}
+.btn2
+{
+  padding: 5px 20px;
+  background-color: rgb(196, 169, 141);
+  color: black;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: 2px black solid;
+}
+.btn2:hover
+{
+  background:  rgb(21, 96, 111);
+  color: rgb(196, 169, 141);
+}
+.feedback{
+  padding: 120px 5%;
+  min-height: 100vh;
+}

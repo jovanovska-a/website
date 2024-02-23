@@ -1,0 +1,97 @@
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 10px;
+  background-color: rgb(194, 174, 154);
+  margin: 0;
+}
+ul li a{
+  height: 29rem;
+  width: 16rem;
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  margin-left: 3rem; 
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #7f0000;
+} 
+li a:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.content
+{
+  padding-bottom: 1.5rem;
+  padding-top: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  position: relative;
+  background-color: rgb(216, 203, 186);
+}
+.favorite
+{
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  font-size: 1.2 rem;
+}
+.favorite.not{
+  color: grey;
+}
+.product-item-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.origins
+{
+  flex: 9 ;
+}
+.origins span{
+  border-radius: 2rem;
+  display: inline-block;
+  font-size: .7rem;
+  color: grey;
+  margin-right: .3rem;
+}
+.cook-time{
+  font-size: .8rem;
+  flex: 3;
+  text-align: right;
+}
+.price{
+  color: #414141;
+  margin-top: .5 rem;
+}
+.pochetna3
+{
+  width: 53%;
+  margin-left: 4%;
+  height: 53vh;
+  opacity: 0.9;
+  margin-top: 50px;
+  border-radius: 150px;
+  border: 1px solid rgb(185, 159, 113);
+  margin-bottom: 20px;
+}
+.pochetna3:hover{
+  opacity: 1;
+}
+.div3{
+  background-color: rgb(224, 212, 169);
+  height: 100vh;
+}
+p
+{
+  color: rgb(65, 1, 1);
+  width: 70%;
+  padding-left: 60px;
+  font-size: 22px;
+  font-style: italic;
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+section{
+  padding: 160px 5%;
+  min-height: 100vh;
+}
+.home{
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to top right ,rgba(255, 255, 255, 0.5),rgba(0, 0 ,0 ,0.001)),url(/assets/slike/sllika23.png);
+}
+.home-text h1{
+  color: rgb(196, 169, 141);
+  font-size: 2.3rem;
+}
+.home-text .pom{
+  font-size: 1.5rem;
+  color: rgb(132, 112, 92);
+  margin-bottom: 20px;
+}
+.home-text p{
+  font-size: 1rem;
+  margin: 0.4rem 0 1.8rem;
+  color: rgb(45, 50, 75);
+}
+.home-text span{
+  color: rgb(132, 112, 92);
+  text-decoration: underline;
+}
+.btn
+{
+  padding: 10px 30px;
+  background-color: rgb(196, 169, 141);
+  color: black;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  border: 2px black solid;
+  margin-top: 20px;
+}
+.btn:hover{
+  background:  rgb(21, 96, 111);
+  color: rgb(196, 169, 141);
+}
